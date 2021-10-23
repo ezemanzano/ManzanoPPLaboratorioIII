@@ -1,0 +1,64 @@
+<html lang="en">
+    
+<head>
+   
+    <script src="tabla.js" >
+    </script>
+    <link rel="stylesheet" href="./css/custom.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+            <div id="divFlex">
+                <div id="divSpinner" class="spinner" hidden></div>                
+                <table id="tabla" class="grilla tabla">
+                    <thead>
+                    <tr>
+                        <th> ID</th>
+                        <th> Nombre</th>
+                        <th> Apellido</th>
+                        <th> Localidad</th>
+                        <th> Sexo</th>
+                    </tr>
+                    </thead>
+                </table>
+                   
+               <dialog id="favDialog" >
+                    <form method="dialog" >              
+                        <div style="display: flex; justify-content: end;">
+                            <input type="button" value="X"  class="closeButton" onclick="closeDialog()"/>
+                            <br> 
+                        </div>
+                        <div  class="inputs-facha">
+                            <input type="hidden" id="id"/> 
+                            <label>Nombre:</label>
+                            <br>    
+                            <input type="text" id="name" /> 
+                            <br>
+                            <label>Apellido:</label>
+                            <br>    
+                            <input type="text" id="lastname" /> 
+                            <br>
+                            <select id="localidades" class="select-facha">
+                            </select>  
+                            <br>    
+                            <label>Sexo:</label>
+                            <br>    
+                            <input type="radio" name="gender" id="Male" value="Male">Male
+                            <input type="radio" name="gender" id="Female" value="Female">Female
+                            <br>     
+                            <br>                          
+                            <input type="button" value="Modificar" onclick="modificarPersona()" class="button-mod" /> 
+                        </div>
+                    </form>
+                </dialog>      
+              
+            </div> 
+        
+                   
+            
+</body>
+</html>

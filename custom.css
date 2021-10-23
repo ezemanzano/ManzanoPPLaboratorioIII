@@ -1,0 +1,99 @@
+.grilla {
+  border: solid 1px black;
+  width: 30%;
+}
+
+.grilla th {
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  width: 100px;
+  text-align: center;
+  padding: 5px;
+  background-color: rgba(32, 178, 170, 1);
+}
+
+.grilla td {
+  border-right: solid 1px black;
+  border-bottom: solid 1px black;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.tabla {
+  border-collapse: collapse;
+  text-align: center;
+  margin: 20px;
+  margin: auto;
+}
+
+.closeButton {
+  max-width: 30px;
+  max-height: 30px;
+  background-color: red;
+  color: white;
+  float: right;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.validate-wrong {
+  border: solid 1px red;
+}
+
+.spinner {
+  position: absolute;
+  z-index: 11;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  opacity: 30%;
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid rgb(58, 55, 194);
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 4s linear infinite;
+}
+
+#divSpinner {
+  margin: auto;
+}
+
+#divFlex {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.button-mod {
+  margin-top: 20px;
+  padding: 4px;
+  background-color: rgb(72, 221, 72);
+  border-radius: 5px;
+  float: right;
+  cursor: pointer;
+}
+
+.inputs-facha > input {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.select-facha {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
